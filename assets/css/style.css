@@ -5,18 +5,23 @@
   box-sizing: border-box;
 }
 
+img:hover {
+  transform: translate(3px, 3px);
+  transition: 0.2s;
+}
+
 .logo {
   font-family: "Times New Roman", Times, serif;
   font-size: 60px;
   border-radius: 15px;
   color: #1E2D40;
+  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
   mix-blend-mode: multiply;
   padding: 20px;
   justify-content: center;
   text-align: center;
   display: block;
   text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
 }
 
 .logoMusica {
@@ -59,6 +64,54 @@
   display: block;
   text-decoration: none;
   background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
+}
+
+.footer {
+  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
+  color: #1E2D40;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-style: normal;
+}
+
+.footer img {
+  width: 15px;
+  height: 15px;
+}
+
+.footerMusica {
+  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
+  color: #1E2D40;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-style: normal;
+}
+
+.footerMusica img {
+  width: 15px;
+  height: 15px;
+}
+
+.footerGaleria {
+  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
+  color: #1E2D40;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-style: normal;
+}
+
+.footerGaleria img {
+  width: 15px;
+  height: 15px;
 }
 
 .navbar {
@@ -188,25 +241,6 @@
   left: 5px;
 }
 
-.fotoPortada {
-  background-image: url(../img/FotoPortada.jpg);
-  background-size: cover;
-  width: 99%;
-  height: 500px;
-  border: #1E2D40;
-  padding: 10px;
-  margin: 5px;
-  display: flex;
-  justify-content: left;
-  border-radius: 15px;
-}
-
-.fotoPortadaInfo {
-  color: #D9D7CC;
-  font-style: italic;
-  font-size: 30px;
-}
-
 .botonAvion {
   margin: 0px;
   padding: 0px;
@@ -241,59 +275,6 @@
   border-color: #1E2D40;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-img:hover {
-  transform: translate(3px, 3px);
-  transition: 0.2s;
-}
-
-.footer {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footer img {
-  width: 15px;
-  height: 15px;
-}
-
-.footerMusica {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footerMusica img {
-  width: 15px;
-  height: 15px;
-}
-
-.footerGaleria {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footerGaleria img {
-  width: 15px;
-  height: 15px;
 }
 
 .articuloDestinos {
@@ -524,68 +505,6 @@ img:hover {
     height: 15px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.logo {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  border-radius: 15px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
-.logoMusica {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  border-radius: 15px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
-.logoGaleria {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  border-radius: 15px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
-.logoDestino {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  border-radius: 15px;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
 .navbar {
   border-radius: 15px;
 }
@@ -713,25 +632,6 @@ img:hover {
   left: 5px;
 }
 
-.fotoPortada {
-  background-image: url(../img/FotoPortada.jpg);
-  background-size: cover;
-  width: 99%;
-  height: 500px;
-  border: #1E2D40;
-  padding: 10px;
-  margin: 5px;
-  display: flex;
-  justify-content: left;
-  border-radius: 15px;
-}
-
-.fotoPortadaInfo {
-  color: #D9D7CC;
-  font-style: italic;
-  font-size: 30px;
-}
-
 .botonAvion {
   margin: 0px;
   padding: 0px;
@@ -771,54 +671,6 @@ img:hover {
 img:hover {
   transform: translate(3px, 3px);
   transition: 0.2s;
-}
-
-.footer {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footer img {
-  width: 15px;
-  height: 15px;
-}
-
-.footerMusica {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footerMusica img {
-  width: 15px;
-  height: 15px;
-}
-
-.footerGaleria {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footerGaleria img {
-  width: 15px;
-  height: 15px;
 }
 
 .articuloDestinos {
@@ -1049,68 +901,6 @@ img:hover {
     height: 15px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.logo {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  border-radius: 15px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
-.logoMusica {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  border-radius: 15px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
-.logoGaleria {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  border-radius: 15px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
-.logoDestino {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  color: #1E2D40;
-  mix-blend-mode: multiply;
-  border-radius: 15px;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-}
-
 .navbar {
   border-radius: 15px;
 }
@@ -1296,54 +1086,6 @@ img:hover {
 img:hover {
   transform: translate(3px, 3px);
   transition: 0.2s;
-}
-
-.footer {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footer img {
-  width: 15px;
-  height: 15px;
-}
-
-.footerMusica {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footerMusica img {
-  width: 15px;
-  height: 15px;
-}
-
-.footerGaleria {
-  background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
-  color: #1E2D40;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-style: normal;
-}
-
-.footerGaleria img {
-  width: 15px;
-  height: 15px;
 }
 
 .articuloDestinos {

@@ -1,57 +1,7 @@
-@import"resset";
-   
-.logo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoMusica {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoGaleria {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoDestino {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    border-radius: 15px;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
+@import "resset";
+@import "logo";
+@import "footer";
+
 .navbar{
     border-radius: 15px;
 }
@@ -170,22 +120,377 @@
 }
 
 
-.fotoPortada{
-    background-image: url(../img/FotoPortada.jpg);
-    background-size: cover;
-    width: 99%;
-    height: 500px;
-    border: #1E2D40;
-    padding: 10px;
-    margin: 5px;
+.botonAvion{
+   margin: 0px;
+   padding: 0px;
+   background-color: #70848C;
+}
+
+.subTitulo{
+    margin: 15px;
+    color: #1E2D40;
+    font-style: oblique;
+    font-size: 35px;
+}
+
+.Destino{
     display: flex;
-    justify-content: left;
+    width: 500px;
+    gap: 10px;
+    margin: 10px;
+    color: #1E2D40;
+}
+.Destinos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Destino > img{
+    height: 250px;
+    width: 250px;
     border-radius: 15px;
+    border-color: #1E2D40;
+    object-fit: cover; 
+}
+
+.articuloDestinos{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    color: #1E2D40;    
+    width: 50px
     }
-.fotoPortadaInfo{
+
+.articuloDestino{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/*Pagina de Galeria de Imagenes*/
+/*"Galerias seria la targeta padre y "Galeria1" la hija*/
+
+.Galerias{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+    text-align: justify;
+    align-items: center;
+}
+.Galeria1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;    
+}
+
+/*Edision de las imagenes de ArticulosMusica*/
+.ArticulosMusica img{
+    width: 500px;
+    border-radius: 10px;
+}
+/*Tarjetas de ArticulosMusica*/
+.ArticuloMusica1{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+.ArticuloMusica2{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+.ArticuloMusica3{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+.ArticuloMusica4{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+.ArticuloMusica5{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+.ArticuloMusica6{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+.ArticuloMusica7{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+.ArticuloMusica8{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 15px;
+}
+
+.ArticulosMusica{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+/*El @ media es para Dispositivos de 600px pagina Musica*/
+/*Esta armado para verlo con un tamaño de 590x510*/
+@media(max-width:600px){
+    .ArticulosMusica img{
+        margin-bottom: 5px;
+        font-size: small;
+    }
+    .logoMusica{
+        color: black;
+        background:linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
+    }
+    .ArticulosMusica{
+        text-align: justify;  
+    }     
+    .navegadorMusica{
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    top: 150px; 
+    width: 100%;
+    }
+    .navegadorMusica > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    }
+    .navegadorMusica > ul > li:hover ul {
+    display: block;
+    }
+    .navegadorMusica ul li a {
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    justify-items: center;
+    }
+    .navegadorMusica > ul > li {
+    position: relative;
+    }
+    .navegadorMusica > ul > li > ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    
+    width: 100%;
+    left: 5px;
+    }
+    .footerMusica{
+        background: linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
+        color: black;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+    }
+    .footerMusica img{
+        width: 15px;
+        height: 15px;
+    }
+}
+/*El @ media es para Dispositivos menores de 600px pagina Musica*/
+@media(max-width:512px){
+    .Galerias{
+        display: grid;
+        grid-template-columns: 300px ;
+        justify-content: space-around;
+        margin-top: 20px;
+        gap: 10px;
+        text-align: justify;
+        align-items: center;
+        }
+    .logoGaleria{
+    color: black;
+    background:linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
+        }
+    .navegadorGaleria{
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        top: 150px; 
+        width: 100%;
+        }
+    .navegadorGaleria > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        }
+    .navegadorGaleria > ul > li:hover ul {
+        display: block;
+        }
+    .navegadorGaleria ul li a {
+        display: flex;
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        justify-items: center;
+        }
+    .navegadorGaleria > ul > li {
+        position: relative;
+        }
+    .navegadorGaleria > ul > li > ul {
+        display: none;
+        position: absolute;
+        list-style-type: none;   
+        width: 100%;
+        left: 5px;
+        }    
+    .footerGaleria{
+        background: linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
+        color: black;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        }
+    .footerGaleria img{
+        width: 15px;
+        height: 15px;
+        }
+}
+
+.navbar{
+    border-radius: 15px;
+}
+
+.navegador{
+    border-radius: 15px;
+    background-color :#456173;
+    display: flex;
+    justify-content: center;
+    top: 150px; 
+    width: 100%;
+}
+.navegador > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.navegador > ul > li:hover ul {
+    display: block;
+}
+.navegador ul li a {
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
     color: #D9D7CC;
-    font-style: italic;
-    font-size: 30px;
+    font-size: 20px;
+    justify-items: center;
+}
+.navegador > ul > li {
+    position: relative;
+}
+.navegador > ul > li > ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: #456173;
+    width: 100%;
+    left: 5px;
+}
+
+
+.navegadorMusica{
+    border-radius: 15px;
+    background-color :#456173;
+    display: flex;
+    justify-content: center;
+    top: 150px; 
+    width: 100%;
+}
+.navegadorMusica > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.navegadorMusica > ul > li:hover ul {
+    display: block;
+}
+.navegadorMusica ul li a {
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    color: #D9D7CC;
+    font-size: 20px;
+    justify-items: center;
+}
+.navegadorMusica > ul > li {
+    position: relative;
+}
+.navegadorMusica > ul > li > ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: #456173;
+    width: 100%;
+    left: 5px;
+}
+
+
+.navegadorGaleria{
+    border-radius: 15px;
+    background-color :#456173;
+    display: flex;
+    justify-content: center;
+    top: 150px; 
+    width: 100%;
+}
+.navegadorGaleria > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.navegadorGaleria > ul > li:hover ul {
+    display: block;
+}
+.navegadorGaleria ul li a {
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    color: #D9D7CC;
+    font-size: 20px;
+    justify-items: center;
+}
+.navegadorGaleria > ul > li {
+    position: relative;
+}
+.navegadorGaleria > ul > li > ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: #456173;
+    width: 100%;
+    left: 5px;
 }
 .botonAvion{
    margin: 0px;
@@ -225,51 +530,6 @@ img:hover{
     transform: translate(3px, 3px);
     transition: 0.2s;
 }
-.footer{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footer img{
-    width: 15px;
-    height: 15px;
-}
-
-.footerMusica{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footerMusica img{
-    width: 15px;
-    height: 15px;
-}
-
-.footerGaleria{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footerGaleria img{
-    width: 15px;
-    height: 15px;
-}
-
 
 
 .articuloDestinos{
@@ -496,79 +756,6 @@ img:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-}
-.logo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoMusica {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoGaleria {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoDestino {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    border-radius: 15px;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
 .navbar{
     border-radius: 15px;
 }
@@ -742,53 +929,6 @@ img:hover{
     transform: translate(3px, 3px);
     transition: 0.2s;
 }
-.footer{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footer img{
-    width: 15px;
-    height: 15px;
-}
-
-.footerMusica{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footerMusica img{
-    width: 15px;
-    height: 15px;
-}
-
-.footerGaleria{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footerGaleria img{
-    width: 15px;
-    height: 15px;
-}
-
-
-
 .articuloDestinos{
     display: flex;
     padding: 5px;
@@ -1010,552 +1150,3 @@ img:hover{
         height: 15px;
         }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-}
-.logo {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoMusica {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoGaleria {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.logoDestino {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    color: #1E2D40;
-    mix-blend-mode: multiply;
-    border-radius: 15px;
-    padding: 20px;
-    justify-content: center;
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-}
-.navbar{
-    border-radius: 15px;
-}
-
-.navegador{
-    border-radius: 15px;
-    background-color :#456173;
-    display: flex;
-    justify-content: center;
-    top: 150px; 
-    width: 100%;
-}
-.navegador > ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    
-}
-.navegador > ul > li:hover ul {
-    display: block;
-}
-.navegador ul li a {
-    display: flex;
-    padding: 15px;
-    text-decoration: none;
-    color: #D9D7CC;
-    font-size: 20px;
-    justify-items: center;
-}
-.navegador > ul > li {
-    position: relative;
-}
-.navegador > ul > li > ul {
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    background-color: #456173;
-    width: 100%;
-    left: 5px;
-}
-
-
-.navegadorMusica{
-    border-radius: 15px;
-    background-color :#456173;
-    display: flex;
-    justify-content: center;
-    top: 150px; 
-    width: 100%;
-}
-.navegadorMusica > ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    
-}
-.navegadorMusica > ul > li:hover ul {
-    display: block;
-}
-.navegadorMusica ul li a {
-    display: flex;
-    padding: 15px;
-    text-decoration: none;
-    color: #D9D7CC;
-    font-size: 20px;
-    justify-items: center;
-}
-.navegadorMusica > ul > li {
-    position: relative;
-}
-.navegadorMusica > ul > li > ul {
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    background-color: #456173;
-    width: 100%;
-    left: 5px;
-}
-
-
-.navegadorGaleria{
-    border-radius: 15px;
-    background-color :#456173;
-    display: flex;
-    justify-content: center;
-    top: 150px; 
-    width: 100%;
-}
-.navegadorGaleria > ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    
-}
-.navegadorGaleria > ul > li:hover ul {
-    display: block;
-}
-.navegadorGaleria ul li a {
-    display: flex;
-    padding: 15px;
-    text-decoration: none;
-    color: #D9D7CC;
-    font-size: 20px;
-    justify-items: center;
-}
-.navegadorGaleria > ul > li {
-    position: relative;
-}
-.navegadorGaleria > ul > li > ul {
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    background-color: #456173;
-    width: 100%;
-    left: 5px;
-}
-
-
-.fotoPortada{
-    background-image: url(../img/FotoPortada.jpg);
-    background-size: cover;
-    width: 99%;
-    height: 500px;
-    border: #1E2D40;
-    padding: 10px;
-    margin: 5px;
-    display: flex;
-    justify-content: left;
-    border-radius: 15px;
-    }
-.fotoPortadaInfo{
-    color: #D9D7CC;
-    font-style: italic;
-    font-size: 30px;
-}
-.botonAvion{
-   margin: 0px;
-   padding: 0px;
-   background-color: #70848C;
-}
-
-.subTitulo{
-    margin: 15px;
-    color: #1E2D40;
-    font-style: oblique;
-    font-size: 35px;
-}
-
-.Destino{
-    display: flex;
-    width: 500px;
-    gap: 10px;
-    margin: 10px;
-    color: #1E2D40;
-}
-.Destinos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.Destino > img{
-    height: 250px;
-    width: 250px;
-    border-radius: 15px;
-    border-color: #1E2D40;
-    object-fit: cover; 
-}
-
-img:hover{
-    transform: translate(3px, 3px);
-    transition: 0.2s;
-}
-.footer{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footer img{
-    width: 15px;
-    height: 15px;
-}
-
-.footerMusica{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footerMusica img{
-    width: 15px;
-    height: 15px;
-}
-
-.footerGaleria{
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
-    color: #1E2D40;
-    border-radius: 15px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-style: normal;
-}
-.footerGaleria img{
-    width: 15px;
-    height: 15px;
-}
-
-
-
-.articuloDestinos{
-    display: flex;
-    padding: 5px;
-    margin: 5px;
-    color: #1E2D40;    
-    width: 50px
-    }
-
-.articuloDestino{
-    padding: 5px;
-    margin: 5px;
-}
-
-
-/*Pagina de Galeria de Imagenes*/
-/*"Galerias seria la targeta padre y "Galeria1" la hija*/
-
-.Galerias{
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    justify-content: space-around;
-    margin-top: 20px;
-    gap: 10px;
-    text-align: justify;
-    align-items: center;
-}
-.Galeria1 img {
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
-    object-fit: cover;    
-}
-
-/*Edision de las imagenes de ArticulosMusica*/
-.ArticulosMusica img{
-    width: 500px;
-    border-radius: 10px;
-}
-/*Tarjetas de ArticulosMusica*/
-.ArticuloMusica1{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-.ArticuloMusica2{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-.ArticuloMusica3{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-.ArticuloMusica4{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-.ArticuloMusica5{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-.ArticuloMusica6{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-.ArticuloMusica7{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-.ArticuloMusica8{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 15px;
-}
-
-.ArticulosMusica{
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
-/*El @ media es para Dispositivos de 600px pagina Musica*/
-/*Esta armado para verlo con un tamaño de 590x510*/
-@media(max-width:600px){
-    .ArticulosMusica img{
-        margin-bottom: 5px;
-        font-size: small;
-    }
-    .logoMusica{
-        color: black;
-        background:linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
-    }
-    .ArticulosMusica{
-        text-align: justify;  
-    }     
-    .navegadorMusica{
-    border-radius: 15px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    top: 150px; 
-    width: 100%;
-    }
-    .navegadorMusica > ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    }
-    .navegadorMusica > ul > li:hover ul {
-    display: block;
-    }
-    .navegadorMusica ul li a {
-    display: flex;
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    justify-items: center;
-    }
-    .navegadorMusica > ul > li {
-    position: relative;
-    }
-    .navegadorMusica > ul > li > ul {
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    
-    width: 100%;
-    left: 5px;
-    }
-    .footerMusica{
-        background: linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
-        color: black;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        font-style: normal;
-    }
-    .footerMusica img{
-        width: 15px;
-        height: 15px;
-    }
-}
-/*El @ media es para Dispositivos menores de 600px pagina Musica*/
-@media(max-width:512px){
-    .Galerias{
-        display: grid;
-        grid-template-columns: 300px ;
-        justify-content: space-around;
-        margin-top: 20px;
-        gap: 10px;
-        text-align: justify;
-        align-items: center;
-        }
-    .logoGaleria{
-    color: black;
-    background:linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
-        }
-    .navegadorGaleria{
-        border-radius: 15px;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        top: 150px; 
-        width: 100%;
-        }
-    .navegadorGaleria > ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        }
-    .navegadorGaleria > ul > li:hover ul {
-        display: block;
-        }
-    .navegadorGaleria ul li a {
-        display: flex;
-        padding: 15px;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 20px;
-        justify-items: center;
-        }
-    .navegadorGaleria > ul > li {
-        position: relative;
-        }
-    .navegadorGaleria > ul > li > ul {
-        display: none;
-        position: absolute;
-        list-style-type: none;   
-        width: 100%;
-        left: 5px;
-        }    
-    .footerGaleria{
-        background: linear-gradient(90deg, rgba(217,123,41,1) 63%, rgba(115,48,66,1) 100%);
-        color: black;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        font-style: normal;
-        }
-    .footerGaleria img{
-        width: 15px;
-        height: 15px;
-        }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
