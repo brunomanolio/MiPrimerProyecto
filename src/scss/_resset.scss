@@ -7,3 +7,55 @@ img:hover{
     transform: translate(3px, 3px);
     transition: 0.2s;
 }
+
+
+.botonAvion{
+    margin: 0px;
+    padding: 0px;
+    background-color: #70848C;
+ }
+ 
+ .subTitulo{
+     margin: 15px;
+     color: #1E2D40;
+     font-style: oblique;
+     font-size: 35px;
+ }
+ 
+ .Destino{
+     display: flex;
+     width: 500px;
+     gap: 10px;
+     margin: 10px;
+     color: #1E2D40;
+ }
+ .Destinos{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+ 
+ .Destino > img{
+     height: 250px;
+     width: 250px;
+     border-radius: 15px;
+     border-color: #1E2D40;
+     object-fit: cover; 
+ }
+ 
+ img:hover{
+     transform: translate(3px, 3px);
+     transition: 0.2s;
+ }
+ .articuloDestinos{
+     display: flex;
+     padding: 5px;
+     margin: 5px;
+     color: #1E2D40;    
+     width: 50px
+     }
+ 
+ .articuloDestino{
+     padding: 5px;
+     margin: 5px;
+ }
