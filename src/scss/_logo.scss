@@ -1,21 +1,28 @@
+//*Pagina Principal///
 .logo{
     font-family:  'Times New Roman', Times, serif;
-    font-size: 60px;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #1E2D40;
-    background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
+    background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
     mix-blend-mode: multiply;
     padding: 20px;
     justify-content: center;
     text-align: center;
     display: block;
-    text-decoration: none;
+    text-decoration: none;    
     }
+@media(max-width:600px){
+    .logo{    
+        display: none;
+    }
+}
+    
 
+//*Pagina Musica///
 .logoMusica {
     font-family:  'Times New Roman', Times, serif;
     font-size: 60px;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #1E2D40;
     mix-blend-mode: multiply;
     padding: 20px;
@@ -25,11 +32,18 @@
     text-decoration: none;
     background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
     }
+@media(max-width:600px){
+    .logoMusica{    
+        display: none;
+    }
+    }
+        
 
+  //*Pagina Galeria///  
 .logoGaleria {
     font-family:  'Times New Roman', Times, serif;
     font-size: 60px;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #1E2D40;
     mix-blend-mode: multiply;
     padding: 20px;
@@ -39,13 +53,20 @@
     text-decoration: none;
     background: linear-gradient(90deg, rgba(204,217,214,1) 72%, rgba(30,45,64,1) 100%);
     }
+@media(max-width:600px){
+    .logoGaleria{    
+        display: none;
+    }
+    }
 
+
+//*Pagina Destino///
 .logoDestino {
     font-family:  'Times New Roman', Times, serif;
     font-size: 60px;
     color: #1E2D40;
     mix-blend-mode: multiply;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 20px;
     justify-content: center;
     text-align: center;
@@ -53,4 +74,8 @@
     text-decoration: none;
     background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
     }
-   
+@media(max-width:600px){
+    .logoDestino{    
+        display: none;
+    }
+    }  

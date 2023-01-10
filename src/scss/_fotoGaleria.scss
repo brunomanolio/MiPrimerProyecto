@@ -1,0 +1,31 @@
+/*Pagina de Galeria de Imagenes*/
+/*"Galerias seria la targeta padre y "Galeria1" la hija*/
+
+.Galerias{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+    text-align: justify;
+    align-items: center;
+}
+.Galeria1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;    
+}
+
+@media(max-width:600px){
+    .Galerias {
+        display: grid;
+        grid-template-columns: 200px 200px;
+}
+    .Galeria1{
+        img{
+            width: 200px;
+        }
+    }
+
+}
