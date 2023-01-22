@@ -173,3 +173,21 @@
     justify-content: space-around;
     
 }
+
+@media(max-width:600px){
+    .fondoMusica{
+        color: white;
+        background-image: url(/assets/img/Surf/fondo5.jpg)
+    }
+    .botonMusica{
+        background-color: rgb(223, 228, 228);
+    }
+}
+
+@media(max-width:600px){
+    .fondoCompras{
+        color: black;
+        background-image: url(/assets/img/Surf/fondo6.jpg);
+    }
+    
+}

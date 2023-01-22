@@ -1,6 +1,9 @@
 /*Pagina de Galeria de Imagenes*/
 /*"Galerias seria la targeta padre y "Galeria1" la hija*/
 
+.fondoGaleria{
+    background-color: rgb(219, 218, 218);
+}
 .Galerias{
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
@@ -21,7 +24,12 @@
     .Galerias {
         display: grid;
         grid-template-columns: 200px 200px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
 }
+    .fondoGaleria{
+        background-image: url(/assets/img/Surf/fondo1.jpg)
+    }
     .Galeria1{
         img{
             width: 200px;

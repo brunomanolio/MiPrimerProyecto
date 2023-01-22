@@ -187,6 +187,21 @@
   justify-content: space-around;
 }
 
+@media (max-width: 600px) {
+  .fondoMusica {
+    color: white;
+    background-image: url(/assets/img/Surf/fondo5.jpg);
+  }
+  .botonMusica {
+    background-color: rgb(223, 228, 228);
+  }
+}
+@media (max-width: 600px) {
+  .fondoCompras {
+    color: black;
+    background-image: url(/assets/img/Surf/fondo6.jpg);
+  }
+}
 .logo {
   font-family: "Times New Roman", Times, serif;
   border-radius: 10px;
@@ -264,6 +279,10 @@
 }
 /*Pagina de Galeria de Imagenes*/
 /*"Galerias seria la targeta padre y "Galeria1" la hija*/
+.fondoGaleria {
+  background-color: rgb(219, 218, 218);
+}
+
 .Galerias {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
@@ -286,13 +305,18 @@
   .Galerias {
     display: grid;
     grid-template-columns: 200px 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+  }
+  .fondoGaleria {
+    background-image: url(/assets/img/Surf/fondo1.jpg);
   }
   .Galeria1 img {
     width: 200px;
   }
 }
 .navbar {
-  margin: 10px;
+  margin: 7px;
   border-radius: 10px;
   background: linear-gradient(90deg, rgb(204, 217, 214) 72%, rgb(30, 45, 64) 100%);
 }
@@ -306,7 +330,7 @@
   background-image: url(../img/FotoPortada.jpg);
   background-size: cover;
   width: 99%;
-  height: 500px;
+  height: 450px;
   border: #1E2D40;
   padding: 10px;
   margin: 5px;
@@ -319,4 +343,9 @@
   color: #D9D7CC;
   font-style: italic;
   font-size: 30px;
+}
+
+.span {
+  background-color: #1E2D40;
+  font-size: xx-large;
 }
